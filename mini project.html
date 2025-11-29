@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Canteen Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>Smart Canteen Management System</h1>
+
+</header>
+
+<nav class="navbar">
+    <a href="#">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#order">Order</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+    <div class="hero-text">
+        <h2>Skip the Queue, Order Online</h2>
+        <p>Your food will be ready when you arrive!</p>
+        <button>Order Now</button>
+    </div>
+</section>
+
+<section id="menu" class="menu-section">
+    <h2>Our Special Menu</h2>
+
+    <div class="menu-grid">
+
+        <div class="menu-card">
+            <img src="https://wallpapercave.com/wp/wp11267864.jpg" alt="">
+            <h3>Veg Burger</h3>
+            <p>Soft buns with crispy patty & veggies.</p>
+            <span>₹50</span>
+        </div>
+
+        <div class="menu-card">
+            <img src="https://www.sanjanafeasts.co.uk/wp-content/uploads/2023/04/Masala-Dosa-recipe-Sanjana-Feasts.jpg" alt="">
+            <h3>Masala Dosa</h3>
+            <p>South Indian delight with chutney & sambar.</p>
+            <span>₹60</span>
+        </div>
+
+        <div class="menu-card">
+            <img src="https://rachnas-kitchen.com/wp-content/uploads/2017/07/cold-coffee-2.jpg" alt="">
+            <h3>Cold Coffee</h3>
+            <p>Chilled rich creamy cold coffee.</p>
+            <span>₹40</span>
+        </div>
+
+        <div class="menu-card">
+            <img src="https://kaynutrition.com/wp-content/uploads/2023/05/chicken-and-vegetable-pasta-1.jpg" alt="">
+            <h3>Pasta</h3>
+            <p>Italian-style cheesy pasta.</p>
+            <span>₹70</span>
+        </div>
+
+    </div>
+</section>
+
+<section id="order" class="order-section">
+    <h2>Place Your Order</h2>
+
+    <form>
+        <label>Your Name</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Select Item</label>
+        <select required>
+            <option>Veg Burger - ₹50</option>
+            <option>Masala Dosa - ₹60</option>
+            <option>Cold Coffee - ₹40</option>
+            <option>Pasta - ₹70</option>
+        </select>
+
+        <label>Quantity</label>
+        <input type="number" min="1" value="1" required>
+
+        <button type="submit">Submit Order</button>
+    </form>
+</section>
+
+<footer id="contact" class="footer">
+    <p> Location: ABES Engineering College, Ghaziabad</p>
+    <p> Phone: 9876543210</p>
+    <p> 2025 Smart Canteen — All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
+
+
+<style>
+    body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #525253;
+}
+
+
+.header {
+    background: linear-gradient(45deg, #413a3d, #z0c52b8);
+    color: rgb(246, 231, 231);
+    text-align: center;
+    padding: 35px 10px;
+}
+
+
+.navbar {
+    background: #222324;
+    text-align: center;
+    padding: 12px;
+}
+.navbar a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.navbar a:hover {
+    color: #ffcc00;
+}
+
+
+.hero {
+    background: url('https://i.imgur.com/eLhCaMc.jpeg') no-repeat center/cover;
+    height: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-text {
+    text-align: center;
+    color: white;
+    background: rgba(150, 150, 150, 0.55);
+    padding: 25px;
+    border-radius: 10px;
+}
+.hero button {
+    padding: 12px 25px;
+    border: none;
+    margin-top: 10px;
+    background: #ffcc00;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.hero button:hover {
+    background: #e0b200;
+}
+
+
+.menu-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: 25px;
+}
+.menu-card {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+.menu-card img {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+}
+.menu-card:hover {
+    transform: scale(1.05);
+}
+.menu-card span {
+    color: #1a73e8;
+    font-weight: bold;
+    margin-top: 8px;
+    display: block;
+}
+
+
+.order-section {
+    background: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+form {
+    max-width: 350px;
+    margin: auto;
+    text-align: left;
+}
+form input, form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border-radius: 5px;
+    border: 1px solid #bbb;
+}
+form button {
+    width: 100%;
+    padding: 12px;
+    background: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+form button:hover {
+    background: #0c52b8;
+}
+
+
+.footer {
+    text-align: center;
+    background: #323232;
+    color: white;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+</style>
